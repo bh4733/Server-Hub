@@ -1,21 +1,18 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <!-- Toggle Button for mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="container">
                 <div class="navbar-brand">
                     <a href="index.php">Server Hub</a>
                 </div>
-
-                <li><a href="index.php">Home</a></li>
-                <li><a href="servers.php">Servers</a></li>
-                <li><a href="about.php">About</a></li>
-                <?php if (isset($_SESSION['user_id'])): ?>
-                <li><a href="dashboard.php">Dashboard</a></li>
-                <li><a href="logout.php">Logout</a></li>
-                <?php else: ?>
-                <li><a href="login.php">Login</a></li>
-                <li><a href="register.php">Register</a></li>
-                <?php endif; ?>
+                <a href="https://truenas.bhill47.uk/" class="btn btn-light">True NAS</a>
+                <a href="https://one.dash.cloudflare.com/69dc9b1d88209fee317fcc443d917c19/networks/connectors"
+                    class="btn btn-light">Cloudflare</a>
         </nav>
         </div>
         </nav>
